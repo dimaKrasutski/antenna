@@ -1,0 +1,27 @@
+.carousel-caption {
+    position: static;
+    font-weight: bold;
+  }
+  
+  .carousel-indicators {
+    display: none !important;
+  }
+  
+  .visually-hidden {
+    display: none !important;
+  }
+
+  .carousel-text {
+    color: black;
+  }
+
+  .avatar {
+    border-radius: 42%;
+    width: 45px;
+    height: 65px;
+    filter: blur(0.7px);
+  }
+  
+  .text-text {
+    font-size: 13px;
+  }

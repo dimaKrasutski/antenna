@@ -1,0 +1,109 @@
+.main-wrapper {
+  margin: 0 auto;
+  width: 378px;
+}
+
+.text-xs-small {
+  font-size: 10px;
+}
+
+.text-black {
+  color: black;
+}
+
+.block-1 {
+  background: url('img/1.png');
+  height: 457px;
+}
+
+.block-2 {
+  height: 439px;
+  border: 1px solid blanchedalmond
+}
+
+.label {
+  border-radius: 10px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.radio-input {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.size-button {
+  background-color: rgba(255, 191, 42, 0.294);
+  border-radius: 10px;
+  line-height: 36px;
+  padding: 0 5px;
+}
+
+.size-active {
+  font-weight: 900;
+}
+
+.form-input {
+  font-weight: bold;
+  outline: none;
+  border: 1px solid rgb(238, 238, 238);
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px;
+  width: 300px;
+}
+
+.form-checkbox {
+  font-size: 10px;
+}
+
+.btn-submit {
+  font-weight: bold;
+  border-radius: 32px;
+  height: 64px;
+  font-size: 18px;
+}
+
+.block-3 {
+  background: url('img/2.png');
+  height: 106px;
+}
+
+.sale-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.block-4 {
+  height: 500px;
+  background: url('img/3.png');
+}
+
+.block-5 {
+  height: 570px;
+  background: url('img/4.png');
+}
+
+.block-6 {
+  height: 295px;
+  background-color: linen;
+}
+
+.block-7 {
+  height: 507px;
+  background: url('img/5.png');
+}
+
+.block-8 {
+  height: 339px;
+  background: url('img/6.png');
+}
+
+.block-10 {
+  height: 487px;
+  background: url('img/7.png');
+}
+
+
