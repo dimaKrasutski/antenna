@@ -107,27 +107,12 @@ export const FormComponent = () => {
          </form>
       </div>
     
-    <div id="block-3" className="block-3">
+    {/* <div id="block-3" className="block-3">
     <div>
       <p className="sale-text text-right pr-5 pt-2">Aкция действует с 25 по 28 мая</p>             
     
     </div>
-    </div>
+    </div> */}
     </>
     )
 }
-
-
-// const [size, setSize] = useState("s-m");
-//     const [clientName, setClientName] = useState("s-m");
-//     const [clientPhone, setClientPhone] = useState("l-xl");
-
-//     const onSubmit = data => console.log(data);
-
-//     const handleSize = ({ size }) => setSize(size); 
-
-//     const handleName = event = setClientName(event.target.value);
-//     const handlePhone= event = setClientPhone(event.target.value);
-
-//     const handleSubmit = () => console.log(size, clientName, clientPhone);
-

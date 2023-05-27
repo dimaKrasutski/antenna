@@ -23,7 +23,7 @@ function App() {
           <div className="block-10" />
           <FormComponent />
 
-          <footer className="text-center mx-5">
+          <footer className="text-center mx-2">
           <span>
          <p className="mb-0">
          ООО "рикстокмаркет",
@@ -35,18 +35,22 @@ function App() {
             <p className="mb-0">
             г. Минск ул. Тихая 6а
             </p>
+
+            <p className="mb-0 h6">Акция действует на всей территории Беларуси</p>
+
+            <p className="mb-0">Телефон: +375 (29) 111-11-58</p>
           
-          <a className="text-xs-small text-black" href="https://goldshop.by/politics.html" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small" href="https://goldshop.by/politics.html" target="_blank" rel="noopener noreferrer">
             Политика конфиденциальности
           </a>
          
           <p className="mb-0" />
-          <a className="text-xs-small text-black" href="https://goldshop.by/agreement.html" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small" href="https://goldshop.by/agreement.html" target="_blank" rel="noopener noreferrer">
             Пользовательское соглашение
           </a>
 
           <p className="mb-0" />
-          <a className="text-xs-small text-black pb-2" href="https://goldshop.by/dogovor_vozvrata.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small pb-2" href="https://goldshop.by/dogovor_vozvrata.pdf" target="_blank" rel="noopener noreferrer">
             Договор возврата товара и денежных средств
           </a>
           </footer>
