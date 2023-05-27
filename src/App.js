@@ -36,17 +36,17 @@ function App() {
             г. Минск ул. Тихая 6а
             </p>
           
-          <a className="text-xs-small text-black" href="static/politics.html" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small text-black" href="https://goldshop.by/politics.html" target="_blank" rel="noopener noreferrer">
             Политика конфиденциальности
           </a>
          
           <p className="mb-0" />
-          <a className="text-xs-small text-black" href="static/agreement.html" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small text-black" href="https://goldshop.by/agreement.html" target="_blank" rel="noopener noreferrer">
             Пользовательское соглашение
           </a>
 
           <p className="mb-0" />
-          <a className="text-xs-small text-black pb-2" href="dogovor_vozvrata.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small text-black pb-2" href="https://goldshop.by/dogovor_vozvrata.pdf" target="_blank" rel="noopener noreferrer">
             Договор возврата товара и денежных средств
           </a>
           </footer>

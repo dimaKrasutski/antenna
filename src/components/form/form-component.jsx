@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import axios from 'axios';
+
+const url = 'https://sheet.best/api/sheets/94e0aaa5-8285-4bf3-a0b9-2bfbbffebdff';
 
 export const FormComponent = () => {
     const [size, setSize] = useState('s-m');
@@ -20,25 +23,22 @@ export const FormComponent = () => {
         const formData = new FormData(form);
 
         const userInfo = Object.fromEntries(formData.entries());
-        const { name, phone, agree } = userInfo;
+        const { name, phone } = userInfo;
 
-        if(agree) {
-          console.log(name, phone, agree);
+        const dateNow = new Date().toLocaleString();
 
-          // eslint-disable-next-line no-undef
-          Email.send({
-            SecureToken : "5da72411-e24a-4b95-8768-4ede8c9ff640",
-            From : "krasutski.dmitri@gmail.com",
-            To : "alex.makar1981@mail.ru",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-          
-        } else {
-           
-        }
+        console.log(name, phone);
+
+       axios.post(url,
+        { phone,
+          name,
+          date: dateNow,
+          position: 'woman-top',
+          size
+        })
+         .then(response => {
+        console.log(response);
+      })
     }
 
     return (
@@ -88,9 +88,9 @@ export const FormComponent = () => {
               <label className="form-checkbox mx-auto w-75">
                 <input type="checkbox" name="agree" defaultChecked={false} className="me-1" />
                 {/* onClick={handleCheck} value={isChecked}  */}
-                <span>
+                <span className="ml-2">
                   Я согласен с &shy;
-                 <a href="static/politics.html" target="_blank" rel="noopener noreferrer">
+                 <a href="https://goldshop.by/politics.html" target="_blank" rel="noopener noreferrer">
                       политикой конфиденциальности &shy;
                   </a>
                   и пользовательским соглашением
