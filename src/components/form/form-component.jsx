@@ -9,13 +9,8 @@ export const FormComponent = () => {
     // const [isChecked, setChecked] = useState(false);
     // const handleCheck = () => setChecked(!isChecked)
     
-    const handleSize = ({ target : { id }}) => {
-
-         console.log(id);
-
-        setSize(id);
-    } 
-   
+    const handleSize = ({ target : { id }}) => setSize(id);
+    
     const handleSubmit = e => {
         e.preventDefault();
 

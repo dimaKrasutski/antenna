@@ -50,7 +50,7 @@ function App() {
           </a>
 
           <p className="mb-0" />
-          <a className="text-xs-small pb-2" href="https://goldshop.by/dogovor_vozvrata.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="text-xs-small pb-2" href="https://goldshop.by/dogovor_vozvrata.html" target="_blank" rel="noopener noreferrer">
             Договор возврата товара и денежных средств
           </a>
           </footer>

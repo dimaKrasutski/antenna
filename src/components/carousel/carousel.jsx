@@ -55,7 +55,7 @@ export const carousel2 = [
 
 
 export const CustomCarousel = ({ order }) => (
-    <Carousel className="mx-2" indicators={false} variant="light" fade={false} interval={1000000}>
+    <Carousel className="mx-2" indicators={false} variant="light" fade={false} interval={1500}>
 
        {order === 1 ? 
         (
@@ -86,12 +86,8 @@ export const CustomCarousel = ({ order }) => (
                 {text}
             </span>
     
-           
-        
         </Carousel.Item>
     ))
             }
-    
-
   </Carousel>
 )
