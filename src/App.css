@@ -16,8 +16,22 @@
   height: 457px;
 }
 
+.price-block {
+  border: 2px solid blanchedalmond;
+}
+
+.block-sale {
+  border-bottom: 2px solid blanchedalmond;
+  background-color: royalblue;
+}
+
+.price-old {
+  text-decoration: line-through;
+}
+
 .block-2 {
   height: 439px;
+  background: ghostwhite;
   border: 2px solid blanchedalmond
 }
 
@@ -88,7 +102,7 @@
 
 .block-6 {
   height: 295px;
-  background-color: linen;
+  background-color: ghostwhite;
 }
 
 .block-7 {
@@ -99,6 +113,10 @@
 .block-8 {
   height: 339px;
   background: url('img/6.png');
+}
+
+.block-9 {
+  background: ghostwhite;
 }
 
 .block-10 {

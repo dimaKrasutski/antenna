@@ -3,6 +3,10 @@
     font-weight: bold;
   }
   
+  .carousel-item {
+    height: 220px;
+  }
+
   .carousel-indicators {
     display: none !important;
   }

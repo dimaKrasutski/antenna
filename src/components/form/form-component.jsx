@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const url = 'https://sheet.best/api/sheets/94e0aaa5-8285-4bf3-a0b9-2bfbbffebdff';
 
-export const FormComponent = () => {
+export const FormComponent = ({ setRequestSet }) => {
     const [size, setSize] = useState('s-m');
     // const [isChecked, setChecked] = useState(false);
     // const handleCheck = () => setChecked(!isChecked)
@@ -20,9 +20,9 @@ export const FormComponent = () => {
         const userInfo = Object.fromEntries(formData.entries());
         const { name, phone } = userInfo;
 
-        const dateNow = new Date().toLocaleString();
+        const dateNow = new Date();
 
-        console.log(name, phone);
+        console.log(name, phone, dateNow);
 
        axios.post(url,
         { phone,
@@ -33,6 +33,8 @@ export const FormComponent = () => {
         })
          .then(response => {
         console.log(response);
+
+        setRequestSet(true);
       })
     }
 
@@ -81,7 +83,7 @@ export const FormComponent = () => {
              </div>
     
               <label className="form-checkbox mx-auto w-75">
-                <input type="checkbox" name="agree" defaultChecked={false} className="me-1" />
+                <input type="checkbox" name="agree" defaultChecked={true} className="me-1" />
                 {/* onClick={handleCheck} value={isChecked}  */}
                 <span className="ml-2">
                   Я согласен с &shy;
