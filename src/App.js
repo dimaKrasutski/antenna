@@ -33,7 +33,7 @@ function App() {
                 Цена по акции:
               </span>
                <span className="h4 mb-0">
-               29 byn
+               29.99 byn
                 </span> 
             </div>
             </div>
