@@ -52,7 +52,7 @@ function App() {
              <CustomCarousel order={2} />
             </div> 
           <div className="block-10" />
-          <FormComponent />
+          {/* <FormComponent /> */}
 
           <footer className="text-center">
           <span>
