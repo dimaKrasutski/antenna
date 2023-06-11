@@ -8,13 +8,15 @@
 
 .main-1 {
     background: url('../../../img/antenna/main-1.png');
-    background-size: cover;
-    height: 425px;
+    background-size: contain;
+    height: 409px;
 }
 
 .price {
     background: url('../../../img/antenna/price.png');
-    height: 247px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 225px;
 }
 
 .btn-order {
@@ -68,5 +70,6 @@
 .how-to-order-bg {
     background: url('../../../img/antenna/how-to-order.png');
     height: 750px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
