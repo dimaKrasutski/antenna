@@ -57,7 +57,7 @@ export const carousel2 = [
 export const CustomCarousel = ({ order }) => (
     <Carousel className="mx-2" indicators={false} variant="light" fade={false} interval={15000}>
 
-       {order != 1 ? 
+       {order !== 1 ? 
         (
             carousel1.map(({ title, img }) => (
                 <Carousel.Item key={title}>

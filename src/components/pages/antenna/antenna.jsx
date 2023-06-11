@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Footer } from '../../footer/footer';
-import { FormComponent } from '../../form/form-component'; 
+import { Footer } from '../../footer/footer'; 
 import antennaVideo from '../../../img/antenna/antenna-video.webp';
 import antennaCharImg from '../../../img/antenna/antenna-char.png';
 import { PageRequestSent } from '../../page-request-sent/page-request-sent';
 import { Form } from './form.jsx';
 
 import './antenna.scss';
-
 
 export const Antenna = () => {
     const [isRequestSet, setRequestSet] = useState(false);
@@ -77,7 +75,7 @@ export const Antenna = () => {
          </h2>
  
          <div>
-             <img src={antennaVideo} />
+             <img alt="" src={antennaVideo} />
  
              <p className="text-md mb-3">
                  За компактными размерами и простым внешним видом скрывается современная начинка, благодря которой теперь телевидение в цифровом качестве будет доступно всегда и везде.
@@ -87,7 +85,7 @@ export const Antenna = () => {
          <div className="antenna-char">
              <h2 className="mb-3 pt-3">Характеристики товара</h2>
  
-            <img src={antennaCharImg} className="mb-4" />
+            <img alt="" src={antennaCharImg} className="mb-4" />
  
             <p className="pb-2">Tип товара:
                <span className="ml-2 font-weight-bold">

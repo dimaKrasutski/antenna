@@ -1,7 +1,6 @@
 import React from "react";
 import { FormComponent } from '../../form/form-component'; 
 import { CustomCarousel } from '../../carousel/carousel';
-import { PageRequestSent } from '../../page-request-sent/page-request-sent';
 
 export const WomanTop = () => (
      <div className="main-wrapper">
