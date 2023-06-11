@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { WomanTop } from './components/pages/woman-top/woman-top';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { WomanTop } from './components/pages/woman-top/woman-top';
 import { Antenna } from './components/pages/antenna/antenna';
 // import { Footer } from './components/footer/footer'; 
 import './App.css';
@@ -15,14 +15,7 @@ function App() {
   // ) : (
     return (
       <div className="App main-wrapper text-center">
-      <BrowserRouter>
-      <Routes>
-        <Route path="woman-top" element={<WomanTop />} />
-        <Route path="antenna-tv" element={<Antenna />} />
-      </Routes>
-      </BrowserRouter>
-
-      {/* <Footer /> */}
+       <Antenna />
       </div>
     )
 }
