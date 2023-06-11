@@ -33,7 +33,7 @@ export const Antenna = () => {
          <div className="main-1" />
          <div className="price" />
  
-         <h5 className="mb-4">Акция действует с 5 июня по 10 июня 2023 года</h5>
+         <h5 className="mb-4">Акция действует с 9 июня по 13 июня 2023 года</h5>
  
          <Form setRequestSet={setRequestSet} />
      
