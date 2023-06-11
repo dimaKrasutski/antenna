@@ -5,7 +5,7 @@ import antennaCharImg from '../../../img/antenna/antenna-char.png';
 import { PageRequestSent } from '../../page-request-sent/page-request-sent';
 import { Form } from './form.jsx';
 
-import './antenna.scss';
+import './antenna.css';
 
 export const Antenna = () => {
     const [isRequestSet, setRequestSet] = useState(false);

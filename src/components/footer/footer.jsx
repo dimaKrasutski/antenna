@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.scss';
+import './footer.css';
 
 export const Footer = () => (
     <footer className="footer text-center mb-2">

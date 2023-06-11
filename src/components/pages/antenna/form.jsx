@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './form.scss';
+import './form.css';
 
 const url = 'https://sheet.best/api/sheets/eb44ba6d-6356-4f6f-9d09-f03dd759a093'; // antenna
 
