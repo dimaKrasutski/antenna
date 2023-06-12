@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from 'classnames';
 import './footer.css';
 
-export const Footer = () => (
-    <footer className="footer text-center mb-2">
+export const Footer = ({ className }) => (
+    <footer className={classNames('footer text-center mb-2', className)}>
     <div>
    <p className="mb-0">
    ООО "AМКонстал-Инжиниринг",

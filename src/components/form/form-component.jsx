@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import axios from 'axios';
 
-const url = 'https://sheet.best/api/sheets/94e0aaa5-8285-4bf3-a0b9-2bfbbffebdff';
+// const womanTopUrl = 'https://sheet.best/api/sheets/94e0aaa5-8285-4bf3-a0b9-2bfbbffebdff';
 
-export const FormComponent = ({ setRequestSet }) => {
+export const FormComponent = ({
+  setRequestSet,
+  url,
+  product,
+  isSize
+}) => {
     const [size, setSize] = useState('s-m');
-    // const [isChecked, setChecked] = useState(false);
-    // const handleCheck = () => setChecked(!isChecked)
     
     const handleSize = ({ target : { id }}) => setSize(id);
     
@@ -28,8 +31,8 @@ export const FormComponent = ({ setRequestSet }) => {
         { phone,
           name,
           date: dateNow,
-          position: 'woman-top',
-          size
+          position: product,
+          size: isSize ? size : null
         })
          .then(response => {
         console.log(response);
@@ -41,12 +44,15 @@ export const FormComponent = ({ setRequestSet }) => {
     return (
         <>
 
-        <div className="block-2 bg-light">
-        <h4>
+       
+         {isSize && (
+            <h4>
           Выберите размер
         </h4>
+         )} 
 
          <form method="post" onSubmit={handleSubmit}>
+           {isSize && (
             <div className="radio-block-top d-flex justify-content-around w-50 mx-auto mb-3">
                <label className="label position-relative">
                  <input id="s-m" type="radio" name="myRadio" className="radio-input" value="s-m" onClick={handleSize} defaultChecked={true} />
@@ -60,6 +66,7 @@ export const FormComponent = ({ setRequestSet }) => {
               <span className={classNames('size-button d-inline-flex', {'size-active bg-warning': size === "l-xl"})}>L-XL</span> 
                 </label>
             </div>
+           )} 
     
             <div className="d-flex flex-column">
               <div className="div-input mb-3">
@@ -94,15 +101,14 @@ export const FormComponent = ({ setRequestSet }) => {
                 </span>
               </label>
     
-              <div className="mt-4">
-                <button type="submit" className="btn-submit bg-warning border-0 w-75">
-                  Отправить заявку
+              <div className="mt-3">
+                <button type="submit" className="btn-submit bg-warning border-0 text-uppercase">
+                  Оформить заказ
                 </button>
               </div>
             </div>
     
          </form>
-      </div>
     
     {/* <div id="block-3" className="block-3">
     <div>

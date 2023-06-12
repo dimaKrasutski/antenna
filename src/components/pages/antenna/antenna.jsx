@@ -19,7 +19,7 @@ export const Antenna = () => {
        <PageRequestSent setRequestSet={setRequestSet} />
     ) : (
         <>
-        <div>
+        <div className="main-wrapper text-center">
         <div className="antenna-header text-white text-uppercase">
          <h1 className="mb-0">
          До 100 каналов
