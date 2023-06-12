@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import { Footer } from '../../footer/footer'; 
 import antennaVideo from '../../../img/antenna/antenna-video.webp';
 import antennaCharImg from '../../../img/antenna/antenna-char.png';
+import image1 from '../../../img/antenna/b2-1.png';
+import image2 from '../../../img/antenna/b2-2.png';
+import image3 from '../../../img/antenna/b2-3.png';
 import { PageRequestSent } from '../../page-request-sent/page-request-sent';
 import { Form } from './form.jsx';
 
-import './antenna.css';
+import './antenna.scss';
 
 export const Antenna = () => {
     const [isRequestSet, setRequestSet] = useState(false);
@@ -29,9 +32,53 @@ export const Antenna = () => {
          </div> 
  
          <div className="main-1" />
-         <div className="price" />
+  
+         <div className="price d-flex justify-content-around mt-5 py-2 position-relative">
+          <div className="old-price d-flex flex-column justify-content-around ml-3">
+             <span className="">
+              Обычная цена:
+             </span>
+
+             <span className="h4 text-black-50 mb-0 old-price-amount">80 BYN</span>
+          </div>
+
+          <div className="sale-price d-flex flex-column justify-content-around mr-2">
+            <span className="font-weight-bold">
+              Скидка:
+             </span>
+
+             <span className="h1 mb-0 sale-price-amount">50%</span>
+          </div>
+
+          <div className="new-price d-flex flex-column justify-content-around ml-auto mr-2">
+            <span>
+              Цена сегодня:
+             </span>
+
+             <span className="h4 mb-0 new-price-amount">39.99 BYN</span>
+
+          </div>
+         </div>
+
+
+         <div className="d-flex mt-4">
+          <div className="d-flex flex-column align-items-center text-sm-small">
+           <img src={image1} className="img-1" alt="" />
+           Уверенный прием картинки!
+          </div>
+
+          <div className="d-flex flex-column align-items-center text-sm-small mr-3">
+           <img src={image2} className="img-2" alt="" />
+          до 300 бесплатных каналов!
+          </div>
+
+          <div className="d-flex flex-column align-items-center text-sm-small mr-3">
+           <img src={image3} className="img-3" alt="" />
+           4к качество Full HD!
+          </div>
+         </div>
  
-         <h5 className="mb-4">Акция действует с 9 июня по 13 июня 2023 года</h5>
+         <h5 className="my-4">Акция действует с 9 июня по 13 июня 2023 года</h5>
  
          <Form setRequestSet={setRequestSet} />
      

@@ -13,10 +13,42 @@
 }
 
 .price {
-    background: url('../../../img/antenna/price.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 225px;
+    background: #e4e4e4;
+    border-radius: 8px;
+
+    .old-price {
+        &-amount {
+            text-decoration: line-through;
+        }
+    }
+
+    .sale-price {
+        background: radial-gradient(57.41% 258.33% at 111.67% -20.83%, #2400ff 0%, rgba(5, 0, 255, 0) 100%), linear-gradient(270.42deg, #00c2ff 0.25%, #1089f9 126.37%);
+        box-shadow: 0px 3px 0px #196cb9;
+        width: 108px;
+        height: 80px;
+        color: rgb(228, 228, 228);
+        font-weight: 900;
+        position: absolute;
+        top: -6px;
+        border-radius: 18px;
+
+        &-amount {
+            font-weight: 900;
+        }
+    }
+
+    .new-price {
+        &-amount {
+           color: #039aff;
+           font-weight: 900;
+        }
+    }
+}
+
+.img-1, .img-2, .img-3 {
+    width: 50px;
+    height: 50px;
 }
 
 .btn-order {
