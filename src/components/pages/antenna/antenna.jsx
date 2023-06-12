@@ -69,7 +69,7 @@ export const Antenna = () => {
 
           <div className="d-flex flex-column align-items-center text-small mr-3">
            <img src={image2} className="img-2" alt="" />
-          до 300 бесплатных каналов!
+          до 100 бесплатных каналов!
           </div>
 
           <div className="d-flex flex-column align-items-center text-small mr-3">
