@@ -1,5 +1,5 @@
 import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { WomanTop } from './components/pages/woman-top/woman-top';
 import { Antenna } from './components/pages/antenna/antenna';
 // import { Footer } from './components/footer/footer'; 
@@ -14,8 +14,14 @@ function App() {
   //     <PageRequestSent setRequestSet={setRequestSet}  />
   // ) : (
     return (
+
       <div className="App main-wrapper text-center">
-       <Antenna />
+        <BrowserRouter>
+          <Routes>
+            <Route path="antenna-tv" element={<Antenna />} />
+            {/* <Route path="two" element={<PageTwo />} /> */}
+         </Routes>
+        </BrowserRouter>
       </div>
     )
 }
