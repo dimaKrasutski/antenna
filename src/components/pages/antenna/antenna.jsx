@@ -62,17 +62,17 @@ export const Antenna = () => {
 
 
          <div className="d-flex mt-4">
-          <div className="d-flex flex-column align-items-center text-sm-small">
+          <div className="d-flex flex-column align-items-center text-small">
            <img src={image1} className="img-1" alt="" />
            Уверенный прием картинки!
           </div>
 
-          <div className="d-flex flex-column align-items-center text-sm-small mr-3">
+          <div className="d-flex flex-column align-items-center text-small mr-3">
            <img src={image2} className="img-2" alt="" />
           до 300 бесплатных каналов!
           </div>
 
-          <div className="d-flex flex-column align-items-center text-sm-small mr-3">
+          <div className="d-flex flex-column align-items-center text-small mr-3">
            <img src={image3} className="img-3" alt="" />
            4к качество Full HD!
           </div>
