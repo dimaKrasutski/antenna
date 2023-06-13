@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Antenna } from './components/pages/antenna/antenna';
 import { AirCondition } from './components/pages/air-condition/air-condition';
+import { Saw } from './components/pages/saw/saw';
 // import { Footer } from './components/footer/footer'; 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="antenna-tv" element={<Antenna />} />
             <Route path="air-condition" element={<AirCondition />} />
+            <Route path="saw" element={<Saw />} />
          </Routes>
         </BrowserRouter>
     )

@@ -8,8 +8,12 @@
   overflow: hidden;
 }
 
-h2, .h2, h3, .h3, h4, .h4 {
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
+}
+
+.font-weight-medium {
+  font-weight: 500;
 }
 
 .text-xs-small {
@@ -30,6 +34,18 @@ h2, .h2, h3, .h3, h4, .h4 {
 
 .text-black {
   color: black;
+}
+
+.text-light-blue{
+  color: #88cffa;
+}
+
+.text-blue {
+  color: #1a71bf;
+}
+
+.text-red {
+  color: red;
 }
 
 .block-1 {
@@ -81,12 +97,16 @@ h2, .h2, h3, .h3, h4, .h4 {
 .form-input {
   font-weight: bold;
   outline: none;
-  border: 1px solid rgb(238, 238, 238);
+  border: 2px solid rgb(238, 238, 238);
   background: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 16px;
   padding: 15px;
   width: 300px;
+}
+
+.form-input-error {
+  border: 2px solid red;
 }
 
 .form-checkbox {

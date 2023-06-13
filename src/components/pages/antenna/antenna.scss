@@ -9,6 +9,7 @@
 .main-1 {
     background: url('../../../img/antenna/main-1.png');
     background-size: contain;
+    background-repeat: no-repeat;
     height: 409px;
 }
 
@@ -104,4 +105,20 @@
     height: 750px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.main-wrapper-antenna {
+    .form {
+        .btn-submit {
+            color: white;
+            width: 260px;
+            height: 70px;
+            margin-bottom: 26px;
+            background: radial-gradient(57.41% 258.33% at 111.67% -20.83%, #2400ff 0%, rgba(5, 0, 255, 0) 100%), linear-gradient(270.42deg, #00c2ff 0.25%, #1089f9 126.37%);
+        }
+    }
+}
+
+.footer-antenna {
+    max-width: 450px;
 }

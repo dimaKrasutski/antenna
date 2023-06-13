@@ -6,20 +6,19 @@ import image1 from '../../../img/antenna/b2-1.png';
 import image2 from '../../../img/antenna/b2-2.png';
 import image3 from '../../../img/antenna/b2-3.png';
 import { PageRequestSent } from '../../page-request-sent/page-request-sent';
-import { Form } from './form.jsx';
+import { FormComponent } from '../../form/form-component';
+import { ANTENN_AIR_SAW_TABLE_URL } from '../../../constants';
 
 import './antenna.scss';
 
 export const Antenna = () => {
     const [isRequestSet, setRequestSet] = useState(false);
 
-    console.log(isRequestSet);
-
   return isRequestSet ? (
        <PageRequestSent setRequestSet={setRequestSet} />
     ) : (
         <>
-        <div className="main-wrapper text-center">
+        <div className="main-wrapper text-center main-wrapper-antenna">
         <div className="antenna-header text-white text-uppercase">
          <h1 className="mb-0">
          До 100 каналов
@@ -61,7 +60,7 @@ export const Antenna = () => {
          </div>
 
 
-         <div className="d-flex mt-4">
+         <div className="d-flex mt-4 justify-content-center">
           <div className="d-flex flex-column align-items-center text-small">
            <img src={image1} className="img-1" alt="" />
            Уверенный прием картинки!
@@ -78,12 +77,21 @@ export const Antenna = () => {
           </div>
          </div>
  
-         <h5 className="my-4">Акция действует с 9 июня по 13 июня 2023 года</h5>
+         <h5 className="my-4">Акция действует с 
+         <span className="mx-1 text-blue">
+         14 июня по 16 июня
+         </span>
+          2023 года</h5>
  
-         <Form setRequestSet={setRequestSet} />
+         <FormComponent
+                  setRequestSet={setRequestSet}
+                  url={ANTENN_AIR_SAW_TABLE_URL}
+                  product={"antenna-tv"}
+                  isSize={false}
+                />
      
          <h2 className="font-weight-bold mb-3">
-             FULL HD в каждом доме
+             Full HD в каждом доме
          </h2>
  
          <div className="hd-wrapper mb-5">
@@ -166,7 +174,7 @@ export const Antenna = () => {
  
      </div>
 
-     <Footer />
+     <Footer className="footer-antenna mx-auto" />
      </>
     )
 }

@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import axios from 'axios';
 
-// const womanTopUrl = 'https://sheet.best/api/sheets/94e0aaa5-8285-4bf3-a0b9-2bfbbffebdff';
-
 export const FormComponent = ({
   setRequestSet,
   url,
   product,
-  isSize
+  isSize,
+  formId
 }) => {
     const [size, setSize] = useState('s-m');
+    const [isNameError, setNameError] = useState(false);
+    const [isPhoneError, setPhoneError] = useState(false);
+
+    console.log(isNameError, isPhoneError);
     
     const handleSize = ({ target : { id }}) => setSize(id);
     
@@ -22,6 +25,18 @@ export const FormComponent = ({
 
         const userInfo = Object.fromEntries(formData.entries());
         const { name, phone } = userInfo;
+
+        if(!name || !phone) {
+          if(!name) {
+            setNameError(true);
+          }
+
+          if(!phone) {
+            setPhoneError(true);
+          }
+
+          return;
+        }
 
         const dateNow = new Date();
 
@@ -35,7 +50,7 @@ export const FormComponent = ({
           size: isSize ? size : null
         })
          .then(response => {
-        console.log(response);
+        // console.log(response);
 
         setRequestSet(true);
       })
@@ -51,7 +66,7 @@ export const FormComponent = ({
         </h4>
          )} 
 
-         <form method="post" onSubmit={handleSubmit}>
+         <form method="post" onSubmit={handleSubmit} className="form" id={formId}>
            {isSize && (
             <div className="radio-block-top d-flex justify-content-around w-50 mx-auto mb-3">
                <label className="label position-relative">
@@ -74,8 +89,9 @@ export const FormComponent = ({
                 type="text"
                 name="name"
                 placeholder="Введите ваше имя"
-                className="form-input"
                 minLength="2"
+                className={classNames('form-input', {'form-input-error': isNameError })}
+                onChange={() => setNameError(false)}
               />
               </div>
            
@@ -84,8 +100,9 @@ export const FormComponent = ({
                 type="text"
                 name="phone"
                 placeholder="Телефон"
-                className="form-input"
                 minLength="7"
+                className={classNames('form-input', {'form-input-error': isPhoneError })}
+                onChange={() => setPhoneError(false)}
                 />
              </div>
     

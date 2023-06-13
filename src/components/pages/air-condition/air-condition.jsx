@@ -11,14 +11,12 @@ import airAd from '../../pages/air-condition/img/air-condition-ad.jpeg';
 import airSpec1 from '../../pages/air-condition/img/spec-1.png';
 import airSpec2 from '../../pages/air-condition/img/spec-2.png';
 import airSpec3 from '../../pages/air-condition/img/spec-3.png';
-import { ANTENN_AIR_CONDITION_TABLE_URL } from '../../../constants';
+import { ANTENN_AIR_SAW_TABLE_URL } from '../../../constants';
 
 import './air-condition.scss';
 
 export const AirCondition = () => {
     const [isRequestSet, setRequestSet] = useState(false);
-
-    console.log(isRequestSet);
 
     return isRequestSet ? (
         <PageRequestSent setRequestSet={setRequestSet} />
@@ -75,7 +73,7 @@ export const AirCondition = () => {
                 <div className="air-condition-gif mt-2" />
                 <div className="old-price-bg" />
 
-                <p className="text-md">Акция действует с 05.06.2023 по 13.06.2023 включительно на всей территории РБ</p>
+                <p className="text-md">Акция действует с 14.06.2023 по 16.06.2023 включительно на всей территории РБ</p>
             </div>
 
 
@@ -186,7 +184,7 @@ export const AirCondition = () => {
                 <h2 className="text-order pt-5 mb-5">Оформить заказ</h2>
                 <FormComponent
                   setRequestSet={setRequestSet}
-                  url={ANTENN_AIR_CONDITION_TABLE_URL}
+                  url={ANTENN_AIR_SAW_TABLE_URL}
                   product={'air-condition'}
                   isSize={false}
                 />
