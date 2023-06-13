@@ -149,7 +149,7 @@ export const Saw = () => {
                 <h3 className="text-blue">ДОСТАВКА И ОПЛАТА</h3>
 
               <div className="saw-delivery-item d-flex flex-column align-items-center my-3 pb-3">
-                  <img src={sawDeliveryImg} className="saw-delivery-item-img my-3" />
+                  <img src={sawDeliveryImg} className="saw-delivery-item-img my-3" alt="" />
                   <span className="saw-delivery-item-text font-weight-medium text-md">
                      Доставкой почтой по Беларуси или курьером по Минску
                      в течение 1-3 дней
@@ -157,7 +157,7 @@ export const Saw = () => {
               </div>
 
               <div className="saw-delivery-item d-flex flex-column align-items-center my-3 pb-3">
-                  <img src={sawPaymentImg} className="saw-delivery-item-img my-3" />
+                  <img src={sawPaymentImg} className="saw-delivery-item-img my-3" alt="" />
                   <span className="saw-delivery-item-text font-weight-medium text-md">
                       Без предоплат
                       <br />
@@ -166,7 +166,7 @@ export const Saw = () => {
               </div>
 
               <div className="saw-delivery-item d-flex flex-column align-items-center my-3 pb-3">
-                  <img src={sawWalletImg} className="saw-delivery-item-img my-3" />
+                  <img src={sawWalletImg} className="saw-delivery-item-img my-3" alt="" />
                   <span className="saw-delivery-item-text font-weight-medium text-md">
                       Возможность проверки товара перед покупкой
                   </span>
