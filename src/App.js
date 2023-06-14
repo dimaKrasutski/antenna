@@ -12,11 +12,7 @@ function App() {
   //     <PageRequestSent setRequestSet={setRequestSet}  />
   // ) : (
     return (
-        <BrowserRouter>
-          <Routes>
-            <Route path="antenna-tv" element={<Antenna />} />
-         </Routes>
-        </BrowserRouter>
+        <Antenna />
     )
 }
 
