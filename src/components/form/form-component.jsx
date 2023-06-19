@@ -111,7 +111,7 @@ export const FormComponent = ({
                 {/* onClick={handleCheck} value={isChecked}  */}
                 <span className="ml-2">
                   Я согласен с &shy;
-                 <a href="https://goldshop.by/politics.html" target="_blank" rel="noopener noreferrer">
+                 <a href="https://antenna-tv.netlify.app/politics.html" target="_blank" rel="noopener noreferrer">
                       политикой конфиденциальности &shy;
                   </a>
                   и пользовательским соглашением
