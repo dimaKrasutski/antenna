@@ -79,7 +79,7 @@ export const Antenna = () => {
  
          <h5 className="my-4">Акция действует с 
          <span className="mx-1 text-blue">
-         14 июня по 16 июня
+         19 июня по 22 июня
          </span>
           2023 года</h5>
  
