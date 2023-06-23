@@ -4,7 +4,8 @@
 
 .main-wrapper {
   margin: 0 auto;
-  width: 400px;
+  min-width: 370px;
+  max-width: 480px;
   overflow: hidden;
 }
 

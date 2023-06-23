@@ -83,12 +83,13 @@ export const Antenna = () => {
          </div>
  
          <h5 className="my-4">Акция действует с 
+         <br />
          <span className="mx-1 text-blue">
          {dayYesterday}
          </span>
         <span>по</span>
          <span className="mx-1 text-blue">
-           {dayTomorrow}
+           {dayTomorrow} <br />
          </span>
           2023 года</h5>
  
