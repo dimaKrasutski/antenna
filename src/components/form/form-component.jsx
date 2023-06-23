@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import moment from 'moment';
+import 'moment/locale/ru';
 import axios from 'axios';
 
 export const FormComponent = ({
@@ -36,7 +38,7 @@ export const FormComponent = ({
           return;
         }
 
-        const dateNow = new Date();
+        const dateNow = moment().format('l LT');
 
         // console.log(name, phone, dateNow);
 
