@@ -12,8 +12,6 @@ export const FormComponent = ({
     const [size, setSize] = useState('s-m');
     const [isNameError, setNameError] = useState(false);
     const [isPhoneError, setPhoneError] = useState(false);
-
-    console.log(isNameError, isPhoneError);
     
     const handleSize = ({ target : { id }}) => setSize(id);
     
@@ -40,7 +38,7 @@ export const FormComponent = ({
 
         const dateNow = new Date();
 
-        console.log(name, phone, dateNow);
+        // console.log(name, phone, dateNow);
 
        axios.post(url,
         { phone,

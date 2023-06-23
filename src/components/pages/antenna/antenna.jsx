@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import moment from 'moment';
+import 'moment/locale/ru';
 import { Footer } from '../../footer/footer'; 
 import antennaVideo from '../../../img/antenna/antenna-video.webp';
 import antennaCharImg from '../../../img/antenna/antenna-char.png';
@@ -13,7 +15,10 @@ import './antenna.scss';
 
 export const Antenna = () => {
     const [isRequestSet, setRequestSet] = useState(false);
-
+  
+    const dayYesterday = moment().subtract(1, 'days').format('Do MMMM');
+    const dayTomorrow = moment().add(1, 'days').format('Do MMMM');
+    
   return isRequestSet ? (
        <PageRequestSent setRequestSet={setRequestSet} />
     ) : (
@@ -79,7 +84,11 @@ export const Antenna = () => {
  
          <h5 className="my-4">Акция действует с 
          <span className="mx-1 text-blue">
-         20 июня по 22 июня
+         {dayYesterday}
+         </span>
+        <span>по</span>
+         <span className="mx-1 text-blue">
+           {dayTomorrow}
          </span>
           2023 года</h5>
  
