@@ -23,11 +23,19 @@ export const FormComponent = ({
      newPhoneVale.replace('+375', '');
 
       setPhoneValue(newPhoneVale);
+
+      if(isPhoneError) {
+        setPhoneError(false);
+      }
     };
 
     const handlePhoneClick = () => {
       if(phoneValue === '') {
         setPhoneValue('+375');
+      }
+
+      if(isPhoneError) {
+        setPhoneError(false);
       }
     };
 
