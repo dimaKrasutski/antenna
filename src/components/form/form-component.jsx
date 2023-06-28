@@ -38,7 +38,8 @@ export const FormComponent = ({
           return;
         }
 
-        const dateNow = moment().format('l LT');
+        // const dateNow = moment().format('l LT');
+        const dateNow = moment().format('LLL'); 
 
         // console.log(name, phone, dateNow);
 
