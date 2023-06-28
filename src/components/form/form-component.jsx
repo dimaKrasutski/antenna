@@ -4,19 +4,39 @@ import moment from 'moment';
 import 'moment/locale/ru';
 import axios from 'axios';
 
+const basePhoneValue = ['+', '+3', '+37', '+375'];
+
 export const FormComponent = ({
   setRequestSet,
   url,
   product,
-  isSize,
+  // isSize,
   formId
 }) => {
-    const [size, setSize] = useState('s-m');
+    const [phoneValue, setPhoneValue] = useState('');
     const [isNameError, setNameError] = useState(false);
     const [isPhoneError, setPhoneError] = useState(false);
-    
-    const handleSize = ({ target : { id }}) => setSize(id);
-    
+  
+    const handlePhoneValue = (e) => {
+      const newPhoneVale = e.target.value;
+
+     newPhoneVale.replace('+375', '');
+
+      setPhoneValue(newPhoneVale);
+    };
+
+    const handlePhoneClick = () => {
+      if(phoneValue === '') {
+        setPhoneValue('+375');
+      }
+    };
+
+    const handlePhoneBlur = () => {
+      if(basePhoneValue.includes(phoneValue)) {
+        setPhoneValue('');
+      }
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -48,7 +68,6 @@ export const FormComponent = ({
           name,
           date: dateNow,
           position: product,
-          size: isSize ? size : null
         })
          .then(response => {
         // console.log(response);
@@ -59,31 +78,7 @@ export const FormComponent = ({
 
     return (
         <>
-
-       
-         {isSize && (
-            <h4>
-          Выберите размер
-        </h4>
-         )} 
-
          <form method="post" onSubmit={handleSubmit} className="form" id={formId}>
-           {isSize && (
-            <div className="radio-block-top d-flex justify-content-around w-50 mx-auto mb-3">
-               <label className="label position-relative">
-                 <input id="s-m" type="radio" name="myRadio" className="radio-input" value="s-m" onClick={handleSize} defaultChecked={true} />
-    
-                 <span className={classNames('size-button d-inline-flex', {'size-active bg-warning': size === "s-m"})}>S-M</span> 
-               </label>
-             
-              <label className="label position-relative">
-              <input id="l-xl" type="radio" name="myRadio" className="radio-input" value="l-xl" onClick={handleSize} />
-    
-              <span className={classNames('size-button d-inline-flex', {'size-active bg-warning': size === "l-xl"})}>L-XL</span> 
-                </label>
-            </div>
-           )} 
-    
             <div className="d-flex flex-column">
               <div className="div-input mb-3">
               <input
@@ -103,7 +98,10 @@ export const FormComponent = ({
                 placeholder="Телефон"
                 minLength="7"
                 className={classNames('form-input', {'form-input-error': isPhoneError })}
-                onChange={() => setPhoneError(false)}
+                onChange={handlePhoneValue}
+                onClick={handlePhoneClick}
+                onBlur={handlePhoneBlur}
+                value={phoneValue}
                 />
              </div>
     
@@ -127,13 +125,6 @@ export const FormComponent = ({
             </div>
     
          </form>
-    
-    {/* <div id="block-3" className="block-3">
-    <div>
-      <p className="sale-text text-right pr-5 pt-2">Aкция действует с 25 по 28 мая</p>             
-    
-    </div>
-    </div> */}
     </>
     )
 }
