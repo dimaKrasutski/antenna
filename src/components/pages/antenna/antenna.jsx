@@ -24,7 +24,7 @@ export const Antenna = () => {
     ) : (
         <>
         <div className="main-wrapper text-center main-wrapper-antenna">
-        <div className="antenna-header text-white">
+        <div className="antenna-header text-white bg-primary">
          <h2 className="mb-0 font-weight-medium">
          TV Антенна до 100 каналов
           <br />
