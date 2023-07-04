@@ -24,20 +24,20 @@ export const Antenna = () => {
     ) : (
         <>
         <div className="main-wrapper text-center main-wrapper-antenna">
-        <div className="antenna-header text-white text-uppercase">
-         <h1 className="mb-0">
-         До 100 каналов
+        <div className="antenna-header text-white">
+         <h2 className="mb-0 font-weight-medium">
+         TV Антенна до 100 каналов
           <br />
-            Без помех и Ряби
-         </h1>
-         <p className="bg-black antenna-header-secondary py-2 mb-0">
-             ДАЖЕ В МЕСТНОСТИ СО СЛАБЫМ СИГНАЛОМ
+            без помех и ряби
+         </h2>
+         <p className="bg-black antenna-header-secondary py-2 mb-0 font-weight-bold">
+             Даже в местности со слабым сигналом
          </p>
          </div> 
  
          <div className="main-1" />
   
-         <div className="price d-flex justify-content-around mt-5 py-2 position-relative">
+         <div className="price d-flex justify-content-around mt-2 py-2 position-relative">
           <div className="old-price d-flex flex-column justify-content-around ml-3">
              <span className="">
               Обычная цена:
@@ -46,7 +46,7 @@ export const Antenna = () => {
              <span className="h4 text-black-50 mb-0 old-price-amount">80 BYN</span>
           </div>
 
-          <div className="sale-price d-flex flex-column justify-content-around mr-2">
+          <div className="sale-price d-flex flex-column justify-content-around">
             <span className="font-weight-bold">
               Скидка:
              </span>
@@ -65,21 +65,56 @@ export const Antenna = () => {
          </div>
 
 
-         <div className="d-flex mt-4 justify-content-center">
-          <div className="d-flex flex-column align-items-center text-small">
-           <img src={image1} className="img-1" alt="" />
-           Уверенный прием картинки!
+         <div className="grid-wrapper mt-4">
+         <div className="d-flex flex-column align-items-center text-small">
+           <img src={image3} className="img-3" alt="" />
+            качество Full HD
           </div>
 
-          <div className="d-flex flex-column align-items-center text-small mr-3">
+          <div className="d-flex flex-column align-items-center text-small">
            <img src={image2} className="img-2" alt="" />
           до 100 бесплатных каналов!
           </div>
 
-          <div className="d-flex flex-column align-items-center text-small mr-3">
-           <img src={image3} className="img-3" alt="" />
-           4к качество Full HD!
-          </div>
+          <div className="d-flex flex-column align-items-center text-small">
+           <img src={image1} className="img-1" alt="" />
+            Хороший прием картинки!
+          </div>         
+         </div>
+
+         <h2 className="font-weight-bold my-3">
+             Full HD в каждом доме
+         </h2>
+ 
+         <div className="hd-wrapper mb-5">
+            <div>
+            <div className="hd-wrapper-img hd-wrapper-img-1 mx-auto mb-2" />
+              <span>
+                 Хороший сигнал и Full HD качество картинки
+              </span>
+            </div>
+ 
+            <div>
+            <div className="hd-wrapper-img hd-wrapper-img-2 mx-auto mb-2" />
+              <span>
+                 Транслирует до 100 каналов
+              </span>
+            </div>
+ 
+ 
+            <div>
+            <div className="hd-wrapper-img hd-wrapper-img-3 mx-auto mb-2" />
+              <span>
+                 Хорошо работает в местности со слабым сигналом
+              </span>
+            </div>
+ 
+            <div>
+            <div className="hd-wrapper-img hd-wrapper-img-4 mx-auto mb-2" />
+              <span>
+                 Быстрая установка и подключение
+              </span>
+            </div>
          </div>
  
          <h5 className="my-4">Акция действует с 
@@ -100,40 +135,7 @@ export const Antenna = () => {
                   isSize={false}
                 />
      
-         <h2 className="font-weight-bold mb-3">
-             Full HD в каждом доме
-         </h2>
- 
-         <div className="hd-wrapper mb-5">
-            <div>
-            <div className="hd-wrapper-img hd-wrapper-img-1 mx-auto mb-2" />
-              <span>
-                 Качественный сигнал и HD качество картинки
-              </span>
-            </div>
- 
-            <div>
-            <div className="hd-wrapper-img hd-wrapper-img-2 mx-auto mb-2" />
-              <span>
-                 Позволяет транслировать до 100 каналов
-              </span>
-            </div>
- 
- 
-            <div>
-            <div className="hd-wrapper-img hd-wrapper-img-3 mx-auto mb-2" />
-              <span>
-                 Стабильно работает в местности со слабым сигналом
-              </span>
-            </div>
- 
-            <div>
-            <div className="hd-wrapper-img hd-wrapper-img-4 mx-auto mb-2" />
-              <span>
-                 Простая установка и подключение
-              </span>
-            </div>
-         </div>
+       
  
          <h2 className="font-weight-bold mb-3 text-uppercase">
              До 100 каналов без помех и ряби
@@ -141,13 +143,9 @@ export const Antenna = () => {
  
          <div>
              <img alt="" src={antennaVideo} />
- 
-             <p className="text-md mb-3">
-                 За компактными размерами и простым внешним видом скрывается современная начинка, благодря которой теперь телевидение в цифровом качестве будет доступно всегда и везде.
-             </p>
          </div>
  
-         <div className="antenna-char">
+         <div className="antenna-char mt-4">
              <h2 className="mb-3 pt-3">Характеристики товара</h2>
  
             <img alt="" src={antennaCharImg} className="mb-4" />
@@ -174,7 +172,7 @@ export const Antenna = () => {
  
              <p className="pb-2 bg-white">Количество каналов:
                <span className="ml-2 font-weight-bold">
-                до 100 каналов в зависимости от вашего ТВ оператора
+                до 100 каналов в зависимости от TV оператора
                </span>
              </p>
              </div>

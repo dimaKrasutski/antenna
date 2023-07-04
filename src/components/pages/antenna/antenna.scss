@@ -1,5 +1,5 @@
 .antenna-header {
-    background: linear-gradient(90deg, #0088e2 0%, #1047ff 100%);
+    background: linear-gradient(90deg, #0012e2 0%, #1047ff 100%);
 }
 
 .antenna-header-secondary {
@@ -24,8 +24,8 @@
     }
 
     .sale-price {
-        background: radial-gradient(57.41% 258.33% at 111.67% -20.83%, #2400ff 0%, rgba(5, 0, 255, 0) 100%), linear-gradient(270.42deg, #00c2ff 0.25%, #1089f9 126.37%);
-        box-shadow: 0px 3px 0px #196cb9;
+        background: radial-gradient(27.41% 258.33% at 111.67% -20.83%, #2400ff 0%, rgba(5, 0, 255, 0) 100%), linear-gradient(270.42deg, #10c2ff 0.25%, #2089f9 126.37%);
+        box-shadow: 0px 3px 0px #126cb9;
         width: 108px;
         height: 80px;
         color: rgb(228, 228, 228);
@@ -41,8 +41,8 @@
 
     .new-price {
         &-amount {
-           color: #039aff;
-           font-weight: 900;
+           color: #099aff;
+           font-weight: 800;
         }
     }
 }
@@ -50,6 +50,11 @@
 .img-1, .img-2, .img-3 {
     width: 50px;
     height: 50px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
 }
 
 .btn-order {
@@ -103,7 +108,7 @@
 .how-to-order-bg {
     background: url('../../../img/antenna/how-to-order.png');
     height: 750px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

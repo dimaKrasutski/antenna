@@ -113,7 +113,7 @@ export const FormComponent = ({
                 />
              </div>
     
-              <label className="form-checkbox mx-auto w-75">
+              <label className="form-checkbox mx-auto w-50">
                 <input type="checkbox" name="agree" defaultChecked={true} className="me-1" />
                 {/* onClick={handleCheck} value={isChecked}  */}
                 <span className="ml-2">
