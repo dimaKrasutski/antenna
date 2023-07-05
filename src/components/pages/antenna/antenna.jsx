@@ -25,11 +25,11 @@ export const Antenna = () => {
         <>
         <div className="main-wrapper text-center main-wrapper-antenna">
         <div className="antenna-header text-white bg-primary">
-         <h2 className="mb-0 font-weight-medium">
+         <h3 className="mb-0 font-weight-medium py-1">
          TV Антенна до 100 каналов
           <br />
             без помех и ряби
-         </h2>
+         </h3>
          <p className="bg-black antenna-header-secondary py-2 mb-0 font-weight-bold">
              Даже в местности со слабым сигналом
          </p>
@@ -177,7 +177,7 @@ export const Antenna = () => {
              </p>
              </div>
  
-            <div className="how-to-order-bg mb-4" />
+            <div className="how-to-order-bg" />
  
  
      </div>
