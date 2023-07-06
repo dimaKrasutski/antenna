@@ -147,8 +147,8 @@ export const Antenna = () => {
  
          <div className="antenna-char mt-4">
              <h2 className="mb-3 pt-3">Характеристики товара</h2>
- 
-            <img alt="" src={antennaCharImg} className="mb-4" />
+
+             <div className="antenna-char-bg mb-4" />
  
             <p className="pb-2">Tип товара:
                <span className="ml-2 font-weight-bold">
