@@ -3,7 +3,6 @@ import moment from 'moment';
 import 'moment/locale/ru';
 import { Footer } from '../../footer/footer'; 
 import antennaVideo from '../../../img/antenna/antenna-video.webp';
-import antennaCharImg from '../../../img/antenna/antenna-char.png';
 import image1 from '../../../img/antenna/b2-1.png';
 import image2 from '../../../img/antenna/b2-2.png';
 import image3 from '../../../img/antenna/b2-3.png';
