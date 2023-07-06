@@ -5,6 +5,7 @@ import 'moment/locale/ru';
 import axios from 'axios';
 
 const basePhoneValue = ['+', '+3', '+37', '+375'];
+const PUBLIC_HTML = `${window.location.href}politics.html`;
 
 export const FormComponent = ({
   setRequestSet,
@@ -118,7 +119,7 @@ export const FormComponent = ({
                 {/* onClick={handleCheck} value={isChecked}  */}
                 <span className="ml-2">
                   Я согласен с &shy;
-                 <a href="https://antenna-tv.tech/politics.html" target="_blank" rel="noopener noreferrer">
+                 <a href={PUBLIC_HTML} target="_blank" rel="noopener noreferrer">
                       политикой конфиденциальности &shy;
                   </a>
                   и пользовательским соглашением
